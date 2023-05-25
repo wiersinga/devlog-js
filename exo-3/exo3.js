@@ -61,14 +61,13 @@ function findWinner(playerChoice, computerChoice){
                 return 'lost';
             } 
         }
-        
+    
         if (playerChoice == 'scissors') {
             if(computerChoice == 'paper'){
                 return 'won';
             } else {
                 return 'lost';
             }
-            
         } 
     } 
     else {
