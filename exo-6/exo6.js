@@ -39,9 +39,23 @@ var tennis = {
     games: [
         opponent: "Broncos",
         teamPoints: 42,
-        opponentPoints: 27
-    ]
-  } 
+        opponentPoints: 27,
+    }], 
+    addPlayer(firstName, lastName, age){
+      return this.players.push({
+        firstName,
+        lastName,
+        age,
+    })
+    },
+
+    matchs(opponent, teamPoints, opponentPoints){
+        return this.games.push({
+           opponent,
+           teamPoints,
+           opponentPoints,
+        })
+    }
 };
 var team ={
     players :[{
